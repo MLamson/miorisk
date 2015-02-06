@@ -1,5 +1,9 @@
 console.log('The Iron Yard Rocks');
 
+//set variables
+var bluePlayer, redPlayer;
+var zone1, zone2;
+
 //intial board setup
 
 function InitialSetup(options)
@@ -7,7 +11,16 @@ function InitialSetup(options)
     	var initSet = options || {};
 
 
-      //zones should be an array of zones
-      this.player1Zones = initSet.player1Zones || [1];
-      this.player2Zones = initSet.player2Zones || [2]; 
+      //zones 
+      zone1 = new Zone({tNumber: 25, oPlayer: 'Blue'});
+      zone2 = new Zone({tNumber: 25, oPlayer: 'Red'});
+
+
+      //players
+      bluePlayer = new Player({name: 'Blue'});
+   		redPlayer = new Player({name: 'Red'});
+      
     }
+
+
+   

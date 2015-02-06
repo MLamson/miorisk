@@ -2,11 +2,11 @@
 
 function Player(options)
     {
-    	var playerInfo = options.playerInfo;
+    	var playerInfo = options;
       
-      this.zonesControlled = options.zonesControlled;
+      this.zonesControlled = playerInfo.zonesControlled;
 
-      //name if wanted
+      this.name = playerInfo.name;
 
       //is turn
 
@@ -15,8 +15,7 @@ function Player(options)
       //function to end turn
 
       //function to attack an opponents zone
-      var attack = function(){
-      	
+      
       }
      
     }

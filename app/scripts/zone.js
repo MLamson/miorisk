@@ -5,14 +5,14 @@ function Zone(options)
     {
     	var zoneInfo = options;
       //which player controls the zone
-      this.controllingPlayer = zoneInfo.controllingPlayer;
+      this.oPlayer = zoneInfo.oPlayer;
 
-      this.zoneNumber = zoneInfo.zoneNumber;
+      //this.zNumber = zoneInfo.zNumber;
 
       //location on map
 
       //number of troops
-      the troopNumbers = zoneInfo.troopNumbers  || 10;
+      this.tNumber = zoneInfo.tNumber  || 10;
 
       //function send troops to adjacent zone
 
