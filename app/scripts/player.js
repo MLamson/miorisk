@@ -15,7 +15,7 @@ function Player(options)
       //function to end turn
 
       //function to attack an opponents zone
-      
+
       }
      
-    }
+    

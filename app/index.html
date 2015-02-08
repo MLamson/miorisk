@@ -23,22 +23,36 @@
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>Bourbon & Neat</li>
-        <li>UnderscoreJS</li>
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+    
+
+    <div class="zone1">
+        <button type="button" class="zoneOneShow" id="zoneOneAttack">Attack This Zone!</button>
+        <input type = "text" id = "zoneOne" />
+        <input type = "text" id = "zoneOneMessage" />
+    </div>
+    <div class="zone2">
+        <button type="button" class = "zoneTwoShow" id="zoneTwoAttack">Attack This Zone!</button>
+        <input type = "text" id = "zoneTwo" />
+        <input type = "text" id = "zoneTwoMessage" />
+    </div>
+    <div class="zone3">
+        <button type="button" id"zoneThreeAttack">Attack This Zone!</button>
+        <input type = "text" id = "zoneThree" />
+        <input type = "text" id = "zoneThreeMessage" />
+    </div>
+    <div class="zone4">
+        <button type="button" id="zoneFourAttack">Attack This Zone!</button>
+        <input type = "text" id = "zoneFour" />
+        <input type = "text" id = "zoneFourMessage" />
     </div>
 
-    <div class="zone1"></div>
-    <div class="zone2"></div>
+    <div class="controls">
+        <span>Red Controlled Zones:<input type="text" id="zonesControlledRed"/></span>
+        <span>Blue Controlled Zones:<input type="text" id="zonesControlledBlue"/></span>
+        <button type="button" id="finishTurn" onClick="finish()">Finish Turn</button>
+        <span>Current Player:<input type="text" id="currentPlayer"/></span>
+
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -46,6 +60,11 @@
     <script src="../bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+        <script src="scripts/zoneLoop.js"></script>
+        <script src="scripts/nextTurn.js"></script>
+        <script src="scripts/finishTurn.js"></script>
+        <script src="scripts/start.js"></script>
         <script src="scripts/zone.js"></script>
         <script src="scripts/player.js"></script>
 
