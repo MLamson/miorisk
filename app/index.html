@@ -26,24 +26,28 @@
     
 
     <div class="zone1">
-        <button type="button" class="zoneOneShow" id="zoneOneAttack">Attack This Zone!</button>
+        <button type="button" class="zoneOneShow" id="zoneOneAttack" name="zone1">Attack This Zone!</button>
         <input type = "text" id = "zoneOne" />
         <input type = "text" id = "zoneOneMessage" />
+        <button type="button" id="zoneOneFrom" name="attackFrom">Attack From</button>
     </div>
     <div class="zone2">
-        <button type="button" class = "zoneTwoShow" id="zoneTwoAttack">Attack This Zone!</button>
+        <button type="button" class = "zoneTwoShow" id="zoneTwoAttack" name="zone2">Attack This Zone!</button>
         <input type = "text" id = "zoneTwo" />
         <input type = "text" id = "zoneTwoMessage" />
+        <button type="button" id="zoneTwoFrom" name="attackFrom">Attack From</button>
     </div>
     <div class="zone3">
         <button type="button" id"zoneThreeAttack">Attack This Zone!</button>
         <input type = "text" id = "zoneThree" />
         <input type = "text" id = "zoneThreeMessage" />
+        <button type="button" id="zoneThreeFrom" name="attackFrom">Attack From</button>
     </div>
     <div class="zone4">
         <button type="button" id="zoneFourAttack">Attack This Zone!</button>
         <input type = "text" id = "zoneFour" />
         <input type = "text" id = "zoneFourMessage" />
+        <button type="button" id="zoneFourFrom" name="attackFrom">Attack From</button>
     </div>
 
     <div class="controls">
@@ -60,7 +64,8 @@
     <script src="../bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
+        <script src="scripts/attFrom.js"></script>
+        <script src="scripts/attack.js"></script>
         <script src="scripts/zoneLoop.js"></script>
         <script src="scripts/nextTurn.js"></script>
         <script src="scripts/finishTurn.js"></script>

@@ -4,7 +4,6 @@ var finish = function(){
 	
 	if(zone1.oPlayer === "Red"){
 		console.log("inside");
-
 		totalRed = totalRed + "" + "Zone 1 ";
 	}
 	else{

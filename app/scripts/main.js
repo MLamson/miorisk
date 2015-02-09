@@ -19,7 +19,7 @@ var txtOutput = document.getElementById("zoneFour");
   txtOutput.value = ""+zone4.tNumber;
 
 
-
+//attackFromWhere();
 	
 
 

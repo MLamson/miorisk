@@ -11,5 +11,5 @@ var nextTurn = function(){
 	var textOutput = document.getElementById("currentPlayer");
   textOutput.value = currentPlayer;
   
-  
-}
+  zoneLoop();
+};
